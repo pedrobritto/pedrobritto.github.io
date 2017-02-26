@@ -1,3 +1,3 @@
-# Em construção!
+# confs-theme
 
-Ainda descobrindo como isso funciona. Em breve, um belo portfólio para você.
+The theme files for the WebConfs blog.
