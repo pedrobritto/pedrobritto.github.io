@@ -1,46 +1,300 @@
----
-layout: default
----
-<div class="hero is-hidden-mobile"></div>
-<div class="grid">
-  <div class="grid__col--12">
-    <ul class="post">
-      <!-- This loops through the paginated posts -->
-      {% for post in paginator.posts %}
-        <li class="post__item">
-          <a class="post__title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <div class="post__meta">
-            <b class="post__author">{{ post.author }}</b>
-            <b class="post__sep">•</b>
-            <b class="post__date">{{ post.date | date: "%b %-d, %Y" }}</b>
-          </div>
-          {{ post.excerpt }}
-          <a class="btn--default" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
-        </li>
-      {% endfor %}
-    </ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pedro Britto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Pacifico|Satisfy" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
 
-    <!-- Pagination links -->
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-      {% if paginator.previous_page %}
-        <a class="pagination__arrow-prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-      {% endif %}
-
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          {{ page }}
-        {% elsif page == 1 %}
-          <a class="pagination__page" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-        {% else %}
-          <a class="pagination__page" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-        {% endif %}
-      {% endfor %}
-
-      {% if paginator.next_page %}
-        <a class="pagination__arrow-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-      {% endif %}
+<div class="wrapper">
+  <!-- <img class="my-photo" src="img/profile.jpg" alt="Retrato de Pedro Britto"> -->
+  <header class="main-header">
+    <h1 class="heading">Pedro Britto</h1>
+    <div class="subheading">
+      Web Developer Front End
+      <br>
+      <a href="mailto:pedroivobritto@gmail.com">
+        pedroivobritto@gmail.com
+      </a>
+      <div class="social-links">
+        <a href="https://github.com/pedrobritto">
+          <i class="fa fa-github-alt" aria-hidden="true"></i>
+          GitHub
+        </a>
+      </div>
     </div>
-    {% endif %}
-  </div>
+
+  </header>
+
+  <!-- About me -->
+  <section class="resume-section">
+    <h2 class="heading">Sobre mim</h2>
+    <p>
+      Sou um aprendiz de desenvolvimento web com foco em front end, atualmente estudando online na HarvardX, Treehouse e Udemy.
+
+    </p>
+    <p>
+      Adquiri interesse pela área e um pouco de experiência quando precisei desenvolver parte de uma loja virtual, trabalhando principalmente com CSS, WooCommerce e Nginx.
+    </p>
+
+    <p>
+      Sou muito curioso e gosto bastante de aprender e criar.
+    </p>
+
+  </section>
+
+  <!-- Skills -->
+  <section class="resume-section">
+    <h2 class="heading">Habilidades</h2>
+
+    <div class="skill-list">
+      <h3 class="heading">Front End</h3>
+      <blockquote>
+        Meu conhecimento de Front End é básico. Consigo me virar bem com HTML5 e CSS3. Não estou muito aprofundado em JavaScript.
+      </blockquote>
+
+      <ul class="list">
+        <li class="item">
+          <span class="skill">HTML5</span>
+          <span class="score lvl-2"></span>
+        </li>
+        <li class="item">
+          <span class="skill">CSS3</span>
+          <span class="score lvl-2"></span>
+        </li>
+        <li class="item">
+          <span class="skill">JavaScript</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <!-- <li class="item separator">Metodologias</li> -->
+        <li class="item">
+          <span class="skill">RSCSS</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <li class="item">
+          <span class="skill">SMACSS</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <!-- <li class="item separator">Outros</li> -->
+        <li class="item">
+          <span class="skill">Tipografia</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <li class="item">
+          <span class="skill">Layout Responsivo</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <li class="item">
+          <span class="skill">Otimização de sites</span>
+          <span class="score lvl-2"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skill-list">
+      <h3 class="heading">Back End</h3>
+      <blockquote>
+        Consigo criar e configurar pequenos servidores web a partir de uma VPS Linux e NGINX.
+      </blockquote>
+      <ul class="list">
+        <li class="item">
+          <span class="skill">PHP</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <li class="item">
+          <span class="skill">NGINX</span>
+          <span class="score lvl-1"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skill-list">
+      <h3 class="heading">CMS</h3>
+      <!-- <blockquote>
+        Trabalhei gerenciando todo o conteúdo de uma loja virtual com WooCommerce.
+      </blockquote> -->
+      <ul class="list">
+        <li class="item">
+          <span class="skill">WordPress</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <li class="item">
+          <span class="skill">WooCommerce</span>
+          <span class="score lvl-2"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skill-list">
+      <h3 class="heading">Design</h3>
+      <!-- <blockquote>
+        Simplicidade sempre. Menos é mais.
+      </blockquote> -->
+      <ul class="list">
+        <li class="item">
+          <span class="skill">Design Gráfico</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <li class="item">
+          <span class="skill">UI/UX</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <!-- <li class="item separator">Ferramentas</li> -->
+        <li class="item">
+          <span class="skill">Gimp </span>
+          <span class="score lvl-1"></span>
+        </li>
+        <li class="item">
+          <span class="skill">Photoshop</span>
+          <span class="score lvl-2"></span>
+        </li>
+        <li class="item">
+          <span class="skill">Illustrator</span>
+          <span class="score lvl-2"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skill-list">
+      <h3 class="heading">Idiomas</h3>
+      <!-- <blockquote>
+        Tenho contato com inglês desde a infância.
+      </blockquote> -->
+      <ul class="list">
+        <li class="item">
+          <span class="skill">Inglês</span>
+          <span class="score lvl-3"></span>
+        </li>
+        <li class="item">
+          <span class="skill">Alemão</span>
+          <span class="score lvl-1"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skill-list">
+      <h3 class="heading">Ferramentas</h3>
+      <ul class="list">
+        <li class="item">
+          <span class="skill">Windows 10</span>
+          <span class="score lvl-3"></span>
+        </li>
+        <li class="item">
+          <span class="skill">Linux (Ubuntu)</span>
+          <span class="score lvl-2"></span>
+        </li>
+        <li class="item">
+          <span class="skill">Atom</span>
+          <span class="score lvl-2"></span>
+        </li>
+        <li class="item">
+          <span class="skill">Sass</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <li class="item">
+          <span class="skill">Gulp</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <li class="item">
+          <span class="skill">SSH</span>
+          <span class="score lvl-1"></span>
+        </li>
+        <li class="item">
+          <span class="skill">Git</span>
+          <span class="score lvl-1"></span>
+        </li>
+      </ul>
+    </div>
+
+
+  </section>
+
+  <!-- Education -->
+  <section class="resume-section">
+    <h2 class="heading">Educação</h2>
+    <ul class="education-list">
+      <li class="item">
+        <div class="name">
+          <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x">
+            CS50x
+          </a>
+          • HarvardX
+        </div>
+        <div class="date">2016 &ndash; Presente</div>
+        <p class="description">
+          Curso de introdução à ciência da computação da Harvard University. Assuntos como abstrações, algorítmos, estruturas de dados, engenharia de software e desenvolvimento web são abordados.
+        </p>
+      </li>
+      <li class="item">
+        <div class="name">
+          <a href="https://teamtreehouse.com/tracks/front-end-web-development">
+            Front End Web Development
+          </a>
+          • Treehouse
+        </div>
+        <div class="date">2016 &ndash; Presente</div>
+        <p class="description">
+          Estudos sobre sobre desenvolvimento web de nível básico e intermediário, incluindo HTML5, CSS3, JavaScript, PHP5 e WordPress.
+        </p>
+      </li>
+      <li class="item">
+        <div class="name">
+          <a href="https://www.udemy.com/the-web-developer-bootcamp/">
+            The Webdeveloper Bootcamp
+          </a>
+          • Udemy
+        </div>
+        <div class="date">2016 &ndash; Presente</div>
+        <p class="description">
+          Similar ao curso da Treehouse com a adição de Node.js, Express, NoSQL e autenticação.
+        </p>
+      </li>
+      <li class="item">
+        <div class="name">
+          <a href="http://www.opa.pro.br/curso/design-grafico/">
+            Design Gráfico
+          </a>
+          •  Opa! Escola de Design</div>
+        <div class="date">2011 &ndash; 2011</div>
+        <p class="description">
+          História do design, tipografia, linguagem visual, cores, Photoshop e Illustrator.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section class="resume-section">
+    <h2 class="heading">Experiências</h2>
+    <div class="job-entry">
+      <div class="summary">
+        <h3 class="rolename">Desenvolvimento Básico</h3>
+        <div class="companyname">Hammer Gaming &#8226; <span class="period">2015 &ndash; 2016</span></div>
+      </div>
+
+      <ul class="activities">
+        <li class="item">Alterações básicas de tema e templates WooCommerce.</li>
+        <li class="item">Cadastro de produtos e criação do layout das descrições.</li>
+        <li class="item">Escolha e edição de todas as imagens utilizadas no site.</li>
+        <li class="item">Escrita de todos os guias.</li>
+        <li class="item">Modificação e padronização de estilos CSS.</li>
+        <li class="item">Configuração e manutenção básica de VPS Ubuntu para rodar e-commerce com Wordpress e WooCommerce.</li>
+        <li class="item">Otimização de tempo de carregamento e tamanho de requisições.</li>
+      </ul>
+    </div>
+
+  </section>
 </div>
+
+    <footer>
+      <small>Handcrafted with <i class="fa fa-code" aria-hidden="true"></i> and <i class="fa fa-heart" aria-hidden="true"></i></small>
+    </footer>
+
+  </body>
+</html>

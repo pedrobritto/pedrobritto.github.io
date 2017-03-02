@@ -1,0 +1,274 @@
+/* Base  */
+/* —————————————————————————————— */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 40rem;
+  background-color: #fbfaf5;
+  margin: 0 auto;
+
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #323236;
+}
+
+@media (min-width: 40rem) {
+  body {
+    padding: 1.5rem 0 0;
+  }
+}
+
+a {
+  color: #f1946c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  opacity: 0.8;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style-type: square;
+}
+
+/* Typography */
+/* —————————————————————————————— */
+
+p {
+  margin-top: 0;
+}
+
+h1, h2, h3 {
+  /*font-family: 'Satisfy', serif;*/
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+/*h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}*/
+
+/* Layout */
+/* —————————————————————————————— */
+
+.resume-section {
+  padding: 2rem 0;
+  border-top: 1px dashed rgba(0,0,0,0.1);
+}
+
+.resume-section:last-of-type {
+  /*border-bottom: none;*/
+}
+
+.resume-section > .heading {
+  margin-top: 0;
+}
+
+.wrapper {
+  background-color: white;
+  position: relative;
+  padding: 0 2rem ;
+  border-radius: 3px;
+  box-shadow: 0 1px 03px rgba(0,0,0,0.12),
+              0 4px 15px rgba(0,0,0,0.07);
+}
+
+/* Header */
+/* —————————————————————————————— */
+
+.main-header {
+  padding-bottom: 2rem;
+}
+
+.main-header .heading {
+  margin: 0;
+  padding-top: 2rem;
+  line-height: 1.6;
+}
+
+.main-header .subheading {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.my-photo {
+  max-width: 150px;
+  position: absolute;
+  right: 2.5rem;
+  top: 1rem;
+  transform: rotate(3deg);
+  transition: .4s;
+
+  border: 5px solid white;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.15);
+}
+
+  .my-photo:hover,
+  .my-photo:active {
+    transform: scale(1.1);
+  }
+
+/* SECTION: Summary */
+/* —————————————————————————————— */
+
+
+/* SECTION: Skills */
+/* —————————————————————————————— */
+
+.skill-list h3 {
+  margin-top: 2.5rem;
+}
+
+.skill-list blockquote {
+  margin: 1.5rem 0;
+  padding-left: .75rem;
+  border-left: 3px solid #f1946c;
+}
+
+.skill-list .list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill-list .item {
+  margin-bottom: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-list .item.separator {
+  font-weight: bold;
+  opacity: 0.5;
+  margin-top: 1.5rem;
+}
+
+.skill-list .score {
+  color: white;
+  border-radius: 3px;
+  padding: 0.2rem .5rem;
+  font-size: .75rem;
+
+  font-weight: 400;
+
+  float: right;
+}
+
+  .score.lvl-1 {
+    background-color: #539fdb;
+  }
+    .score.lvl-1::after {
+      content: "Básico";
+    }
+
+  .score.lvl-2 {
+    background-color: #1adba6;
+  }
+    .score.lvl-2::after {
+      content: "Médio";
+    }
+
+  .score.lvl-3 {
+    background-color: #f25050;
+  }
+    .score.lvl-3::after {
+      content: "Avançado";
+    }
+
+  .score.lvl-4 {
+    background-color: #ee9f37;
+  }
+    .score.lvl-4::after {
+      content: "Avançado";
+    }
+
+  .score.lvl-5 {
+    background-color: #f25050;
+  }
+    .score.lvl-5::after {
+      content: "Mestre";
+    }
+
+
+/* SECTION: Education */
+/* —————————————————————————————— */
+
+.education-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.education-list .item {
+  margin-bottom: 1.5rem;
+}
+
+  .education-list .item .date {
+    font-size: 0.81em;
+  }
+
+  .education-list .item .highlight {
+    font-weight: bold;
+  }
+
+
+/* SECTION: Experiences */
+/* —————————————————————————————— */
+
+.job-entry .summary {
+  margin-bottom: 1.5rem;
+}
+
+  .job-entry .summary .rolename {
+    margin-bottom: 0;
+  }
+
+  .job-entry .summary .companyname {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+
+.job-entry .activities {
+  padding-left: 1.5rem;
+}
+
+  .job-entry .activities .item {
+    padding-bottom: 1rem;
+  }
+
+    @media (min-width: 450px) {
+      .job-entry .activities .item {
+        padding-bottom: 0;
+      }
+    }
+
+/* SECTION: Footer */
+/* —————————————————————————————— */
+
+footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  font-weight: bold;
+  opacity: .5;
+}
