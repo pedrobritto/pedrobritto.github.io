@@ -156,7 +156,7 @@ h1, h2, h3 {
 }
 
 .skill-list .item::before {
-  content: "\f0da";
+  content: "\f0da\0020";
 }
 
 .skill-list .item.separator {
