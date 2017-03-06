@@ -1,0 +1,32 @@
+# Variables
+title: Pedro Britto
+description:
+  I am a Front End Web Developer and I make web development tutorials for beginners.
+baseurl: ""
+url: ""
+
+# Includes
+include: ["_pages"]
+
+# Build settings
+markdown: kramdown
+exclude: [vendor]
+
+sass:
+  sass_dir: _sass
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Pedro Britto"
+      layout: "post"

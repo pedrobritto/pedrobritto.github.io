@@ -1,0 +1,59 @@
+/* Base  */
+/* —————————————————————————————— */
+
+/*
+Break Points:
+
+- 40rem
+- 450px
+
+*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: red;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fbfaf5;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #323236;
+}
+
+@media (min-width: 40rem) {
+  body {
+    padding: 1.5rem 0 0;
+  }
+}
+
+a {
+  color: #f1946c;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .2s;
+}
+
+a:hover,
+a:active {
+  opacity: 0.75;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style-type: square;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: .75rem;
+  border-left: 3px solid #f1946c;
+}

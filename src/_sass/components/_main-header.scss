@@ -1,0 +1,18 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 3px solid #ddd;
+}
+
+.main-nav {
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .item:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+}
