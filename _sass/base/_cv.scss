@@ -1,142 +1,21 @@
-/* Base  */
-/* —————————————————————————————— */
-
-/*
-Break Points:
-
-- 40rem
-- 450px
-*/
-
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  max-width: 40rem;
-  background-color: #fbfaf5;
-  margin: 0 auto;
-
-  font-family: 'Merriweather Sans', sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-  color: #323236;
-}
-
-@media (min-width: 40rem) {
-  body {
-    padding: 1.5rem 0 0;
-  }
-}
-
-a {
-  color: #f1946c;
-  font-weight: bold;
-  text-decoration: none;
-  transition: .2s;
-}
-
-a:hover,
-a:active {
-  opacity: 0.75;
-}
-
-ul {
-  padding-left: 1.5rem;
-  list-style-type: square;
-}
-
-blockquote {
-  margin: 1.5rem 0;
-  padding-left: .75rem;
-  border-left: 3px solid #f1946c;
-}
-
-/* Typography */
-/* —————————————————————————————— */
-
-p {
-  margin-top: 0;
-}
-
-h1, h2, h3 {
-  font-weight: 800;
-  margin: 1rem 0;
-}
-
-
-/* Layout */
-/* —————————————————————————————— */
-
-.wrapper {
-  background-color: white;
-  position: relative;
-  padding: 0 2rem ;
-  border-radius: 3px;
-  box-shadow: 0 1px 03px rgba(0,0,0,0.12),
-  0 4px 15px rgba(0,0,0,0.07);
-}
-
-@media (max-width: 40rem) {
-  .wrapper {
-    border-radius: 0;
-  }
-}
-
 .resume-section {
-  padding-top: 2rem;
-  margin-bottom: 2rem;
-  border-top: 1px dashed rgba(0,0,0,0.1);
-}
-
-.resume-section:last-of-type {
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-}
-
-.resume-section:last-of-type {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .resume-section > .heading {
   margin-top: 0;
 }
 
-
-/* Header */
+/* SECTION: Social Icons */
 /* —————————————————————————————— */
 
-.main-header {
-  padding-bottom: 2rem;
-}
+.cv-social-links {
+  .icon {
 
-.main-header .heading {
-  margin: 0;
-  padding-top: 2rem;
-  line-height: 1.6;
-}
-
-.main-header .subheading {
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-.social-links {
-  font-size: 0.9rem;
-}
-
-  .social-links a {
     display: block;
   }
-
-/* SECTION: Summary */
-/* —————————————————————————————— */
+}
 
 
 /* SECTION: Skills */
@@ -147,8 +26,8 @@ h1, h2, h3 {
 }
 
 .skill-list .list {
-  list-style-type: none;
-  padding-left: 0;
+  // list-style-type: none;
+  // padding-left: 0;
 }
 
 .skill-list .item {
@@ -156,7 +35,7 @@ h1, h2, h3 {
 }
 
 .skill-list .item::before {
-  content: "\f0da\0020";
+  // content: "\f0da\0020";
 }
 
 .skill-list .item.separator {
@@ -271,18 +150,3 @@ h1, h2, h3 {
       padding-bottom: .5rem;
     }
   }
-
-/* SECTION: Footer */
-/* —————————————————————————————— */
-
-footer {
-  padding: 2rem 0;
-  text-align: center;
-  font-weight: bold;
-  font-size: .85rem;
-  opacity: .5;
-}
-
-footer p {
-  margin: 0;
-}
