@@ -1,0 +1,12 @@
+{% for post in site.posts %}
+
+  <article class="post-summary">
+    <h2 class="title">
+      <a href="{{ post.permalink }}">{{ post.title }}</a>
+    </h2>
+
+    <p class="description">{{ post.description }}</p>
+    <a class="button" href="{{ post.permalink }}">Leia Mais</a>
+  </article>
+
+{% endfor %}

@@ -1,38 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pedro Britto | Desenvolvedor Web</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,800" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  </head>
-  <body>
+---
+title: Meu Currículo
+permalink: /cv/
+---
+
+{% include head.html %}
 
 <div class="wrapper">
   <!-- Main Header -->
-  <header class="main-header">
-    <h1 class="heading">Pedro Britto</h1>
-    <div class="subheading">
-      Desenvolvedor Web Front End
-    </div>
-    <div class="social-links">
-      <a href="mailto:pedroivobritto@gmail.com">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-        pedroivobritto@gmail.com
-      </a>
-      <a href="https://github.com/pedrobritto">
-        <i class="fa fa-github-alt" aria-hidden="true"></i>
-        GitHub
-      </a>
-      <a href="http://codepen.io/pedrobritto/pens/public/">
-        <i class="fa fa-codepen" aria-hidden="true"></i>
-        CodePen
-      </a>
-    </div>
-
-  </header>
+    {% include header.html %}
 
   <!-- About me -->
   <section class="resume-section">
@@ -307,14 +282,4 @@
   </section>
 </div>
 
-    <footer>
-      <p>
-        Crafted with
-        <i class="fa fa-code" aria-hidden="true"></i>
-        and
-        <i class="fa fa-heart" aria-hidden="true"></i>
-      </p>
-    </footer>
-
-  </body>
-</html>
+{% include footer.html %}

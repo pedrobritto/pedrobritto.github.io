@@ -30,3 +30,5 @@ defaults:
     values:
       author: "Pedro Britto"
       layout: "post"
+      permalink: /blog/:title
+      comments: true

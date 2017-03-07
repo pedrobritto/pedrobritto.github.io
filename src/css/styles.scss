@@ -2,12 +2,17 @@
 ---
 
 // base
+@import "base/config";
 @import "base/base";
 @import "base/layout";
 @import "base/typography";
+@import "base/cv";
 
 
 // components
 @import "components/main-header";
+@import "components/buttons";
 @import "components/footer";
 @import "components/social-links";
+@import "components/blog";
+@import "components/post";
