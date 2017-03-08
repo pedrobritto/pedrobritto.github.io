@@ -1,9 +1,10 @@
 .main-header {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: space-between;
 
+  text-align: center;
   padding-top: 1.5rem;
   margin-bottom: 2rem;
   border-bottom: $base-border;
@@ -28,12 +29,19 @@
   }
 }
 
+@media (max-width: 370px) {
+  .main-header .logo .text {
+    font-size: 2.5rem;
+  }
+}
+
 .main-nav {
   margin: 0 0 1rem;
 
   ul {
     display: flex;
-    list-style: none;
+    flex-flow: row wrap;
+    list-style-type: none;
     padding: 0;
     margin: 0;
   }
@@ -46,6 +54,7 @@
 
   .item:not(:last-of-type) {
     margin-right: 1.2rem;
+    // list-style: disc;
   }
 }
 

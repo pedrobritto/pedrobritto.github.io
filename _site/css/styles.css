@@ -7,14 +7,33 @@ html { box-sizing: border-box; font-size: 16px; }
 
 body { margin: 0; padding: 0; font-family: 'Merriweather Sans', sans-serif; line-height: 1.8; color: #323236; }
 
-a { color: #f16c6c; text-decoration: none; }
+a { color: #54afe9; text-decoration: none; }
 
 a:hover, a:active { opacity: 0.75; }
 
 ul { padding-left: 1.5rem; list-style-type: square; }
 
-blockquote { margin: 1.5rem 0; padding-left: .75rem; border-left: 3px solid #f16c6c; }
+blockquote { margin: 1.5rem 0; padding-left: .75rem; border-left: 3px solid #54afe9; }
 
+@font-face { font-family: 'fontello'; src: url("../font/fontello.eot?28180225"); src: url("../font/fontello.eot?28180225#iefix") format("embedded-opentype"), url("../font/fontello.woff2?28180225") format("woff2"), url("../font/fontello.woff?28180225") format("woff"), url("../font/fontello.ttf?28180225") format("truetype"), url("../font/fontello.svg?28180225#fontello") format("svg"); font-weight: normal; font-style: normal; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) { @font-face { font-family: 'fontello'; src: url("../font/fontello.svg?28180225#fontello") format("svg"); } }
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: "fontello"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; text-align: center; /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; /* Font smoothing. That was taken from TWBS */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.icon-mail:before { content: '\e800'; }
+
+/* '' */
+.icon-linkedin:before { content: '\f0e1'; }
+
+/* '' */
+.icon-doc-text:before { content: '\f0f6'; }
+
+/* '' */
+.icon-github:before { content: '\f113'; }
+
+/* '' */
+.icon-codepen:before { content: '\f1cb'; }
+
+/* '' */
 /* Layout */
 /* —————————————————————————————— */
 .wrapper { max-width: 40rem; margin: 0 auto; padding: 0 1.5rem; }
@@ -25,7 +44,7 @@ blockquote { margin: 1.5rem 0; padding-left: .75rem; border-left: 3px solid #f16
 /* —————————————————————————————— */
 p { margin-top: 0; }
 
-h1, h2, h3, h4, h5, h6 { font-style: normal; font-family: 'Merriweather', serif; font-weight: 700; margin: 1rem 0; line-height: 1.3; }
+h1, h2, h3, h4, h5, h6 { font-style: normal; font-family: 'Merriweather', serif; font-weight: normal; margin: 1rem 0; line-height: 1.3; }
 
 .resume-section { margin-top: 2rem; margin-bottom: 3rem; }
 
@@ -46,15 +65,15 @@ h1, h2, h3, h4, h5, h6 { font-style: normal; font-family: 'Merriweather', serif;
 .skill-list .score { color: white; border-radius: 3px; padding: 0.35rem .5rem; float: right; font-size: .75rem; font-weight: 400; }
 
 /* skill levels */
-.score.lvl-1 { background-color: #539fdb; }
+.score.lvl-1 { background-color: #4CC2D8; }
 
 .score.lvl-1::after { content: "Básico"; }
 
-.score.lvl-2 { background-color: #1adba6; }
+.score.lvl-2 { background-color: #996cdd; }
 
 .score.lvl-2::after { content: "Médio"; }
 
-.score.lvl-3 { background-color: #f25050; }
+.score.lvl-3 { background-color: #F95471; }
 
 .score.lvl-3::after { content: "Avançado"; }
 
@@ -93,23 +112,24 @@ h1, h2, h3, h4, h5, h6 { font-style: normal; font-family: 'Merriweather', serif;
 .job-entry .activities { padding-left: 1.5rem; }
 
 @media (max-width: 40rem) { .job-entry .activities .item { padding-bottom: .5rem; } }
-.main-header { display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding-top: 1.5rem; margin-bottom: 2rem; border-bottom: 2px solid rgba(241, 108, 108, 0.1); }
+.main-header { display: flex; flex-flow: column wrap; align-items: center; justify-content: space-between; text-align: center; padding-top: 1.5rem; margin-bottom: 2rem; border-bottom: 2px solid rgba(84, 175, 233, 0.1); }
 .main-header .logo { font-size: 3rem; line-height: 1; }
 .main-header .logo .text { font-weight: 900; color: inherit; }
 
 @media (min-width: 580px) { .main-header { flex-direction: row; }
   .main-header .logo { font-size: 2rem; } }
+@media (max-width: 370px) { .main-header .logo .text { font-size: 2.5rem; } }
 .main-nav { margin: 0 0 1rem; }
-.main-nav ul { display: flex; list-style: none; padding: 0; margin: 0; }
+.main-nav ul { display: flex; flex-flow: row wrap; list-style-type: none; padding: 0; margin: 0; }
 .main-nav .item { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
 .main-nav .item:not(:last-of-type) { margin-right: 1.2rem; }
 
 @media (min-width: 580px) { .main-nav { margin: 0; } }
-.button { display: inline-block; font-size: .9rem; color: white; background-color: #f16c6c; padding: .6rem 1.2rem; border-radius: 3px; }
+.button { display: inline-block; font-size: .9rem; color: white; background-color: #54afe9; padding: .6rem 1.2rem; border-radius: 3px; }
 
 /* Footer */
 /* —————————————————————————————— */
-footer { padding: 1.5rem 0; font-size: .85rem; text-align: center; opacity: .7; margin-top: 2rem; border-top: 2px solid rgba(241, 108, 108, 0.1); }
+footer { padding: 1.5rem 0; font-size: .85rem; text-align: center; opacity: .7; margin-top: 2rem; border-top: 2px solid rgba(84, 175, 233, 0.1); }
 footer .legal { margin-top: 1rem; font-weight: bold; }
 
 .social-links { font-size: 1.5rem; }
@@ -119,6 +139,8 @@ footer .legal { margin-top: 1rem; font-weight: bold; }
 
 .post-summary { margin-top: 2rem; padding-bottom: 2rem; }
 .post-summary:last-of-type { border-bottom: none; }
+.post-summary .title { font-weight: bold; }
 
-.post { margin-bottom: 2rem; }
-.post .heading { font-size: 2rem; }
+.blog-post { margin-bottom: 2rem; }
+.blog-post .heading { font-size: 2rem; }
+.blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 { margin-top: 2rem; font-weight: bold; }
