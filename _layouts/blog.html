@@ -3,24 +3,26 @@
 <div class="footer-push">
   {% include header.html %}
 
-    <h1 class="blog-title">{{ page.title }}</h1>
+  <h1 class="blog-title">{{ page.title }}</h1>
 
-    {% if site.posts | size == 0 %}
-      <p>Ainda não tenho nenhum artigo pronto!</p>
-    {% endif %}
+  {% for post in site.posts %}
 
-    {% for post in site.posts %}
+    <article class="post-summary">
+      <h2 class="title">
+        <a href="{{ post.permalink }}">{{ post.title }}</a>
+      </h2>
 
-      <article class="post-summary">
-        <h2 class="title">
-          <a href="{{ post.permalink }}">{{ post.title }}</a>
-        </h2>
+      {% if post.excerpt %}
+      <p class="description">{{ post.excerpt }}</p>
+      {% else %}
+      <p class="description">{{ post.description }}</p>
+      {% endif %}
 
-        <p class="description">{{ post.description }}</p>
-        <a class="button" href="{{ post.permalink }}">Leia Mais</a>
-      </article>
+      <a class="button" href="{{ post.permalink }}">Leia Mais</a>
+    </article>
 
-    {% endfor %}
+  {% endfor %}
+
 </div>
 
 {% include footer.html %}
