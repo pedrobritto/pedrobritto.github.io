@@ -57,21 +57,21 @@
 /* skill levels */
 
   .score.lvl-1 {
-    background-color: #539fdb;
+    background-color: #4CC2D8;
   }
     .score.lvl-1::after {
       content: "Básico";
     }
 
   .score.lvl-2 {
-    background-color: #1adba6;
+    background-color: #996cdd;
   }
     .score.lvl-2::after {
       content: "Médio";
     }
 
   .score.lvl-3 {
-    background-color: #f25050;
+    background-color: #F95471;
   }
     .score.lvl-3::after {
       content: "Avançado";
