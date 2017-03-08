@@ -1,5 +1,5 @@
 ---
-title: Meus Artigos
+title: Artigos
 layout: blog
 permalink: /blog/
 ---

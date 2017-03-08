@@ -52,3 +52,4 @@ node_modules/
 sass-cache/
 todo.md
 _site/
+_config_dev.yml

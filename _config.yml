@@ -4,7 +4,7 @@ description:
   Olá, eu sou o Pedro. Sou um desenvolvedor front end.
   Aqui compartilho o que aprendi e mostro o meu trabalho.
 baseurl: ""
-url: ""
+url: "https://pedrobritto.github.com"
 
 # Includes
 include: ["_pages"]
