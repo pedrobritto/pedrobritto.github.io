@@ -48,6 +48,8 @@ Temporary Items
 
 # Other files #
 ###############
-node_modules
-./sass-cache
 todo.md
+_todo.md
+node_modules/
+sass-cache/
+_site/
