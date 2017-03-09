@@ -1,24 +1,43 @@
 {% if page.comments %}
+
+<button class="button" id="load-comments">Ver comentários</button>
 <div id="disqus_thread"></div>
+
 <script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+const loadComments = document.querySelector('#load-comments');
 
-var disqus_config = function () {
-this.page.url = '{{ site.baseurl }}{{ page.permalink }}';
-this.page.identifier = '{{ page.permalink }}';
-};
+loadComments.addEventListener('click', function() {
 
-(function() {
-var d = document, s = d.createElement('script');
-s.src = 'https://pedrobritto-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+  // disqus variables
+  var disqus_config = function () {
+    this.page.url = '{{ site.baseurl }}{{ page.permalink }}';
+    this.page.identifier = '{{ page.permalink }}';
+  };
+
+  // load disqus
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://pedrobritto-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+
+  loadComments.classList.add("fade");
+  // remove button after 300ms
+  setTimeout( function() {
+    loadComments.style.display = "none";
+
+  }, 300);
+
+
+
+});
+
 </script>
 
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 
 {% endif %}

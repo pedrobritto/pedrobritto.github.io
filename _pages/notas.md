@@ -1,5 +1,5 @@
 ---
-title: Minhas Notas
+title: Notas de estudo
 layout: page
 permalink: /notas/
 ---

@@ -1,5 +1,5 @@
 ---
-title: Meu Portfólio
+title: Portfólio
 layout: page
 permalink: /portfolio/
 ---
