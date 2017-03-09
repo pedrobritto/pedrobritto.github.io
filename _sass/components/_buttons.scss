@@ -5,4 +5,30 @@
   background-color: $c-primary;
   padding: .6rem 1.2rem;
   border-radius: 3px;
+  border: 0;
+}
+
+#load-comments {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  font-family: inherit;
+  font-size: inherit;
+  margin: 1rem 0;
+  transition: .3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: .75;
+  }
+
+  &.fade {
+    opacity: 0;
+  }
+}
+
+
+.sharethis-inline-share-buttons {
+  margin: 1rem 0;
 }

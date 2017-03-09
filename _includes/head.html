@@ -10,44 +10,49 @@
     <title>{{ site.title }}</title>
     {% endif %}
 
+    <!-- sharethis -->
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58c1b42b16d92d001135cdb9&product=inline-share-buttons"></script>
+
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     {% else %}
     <meta name="description" content="{{ site.description }}">
     {% endif %}
 
+    <link rel="canonical" href="{{ site.url }}{{ page.permalink }}">
+
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ site.url }}/css/styles.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="{{ site.url }}/img/favicon/favicon-196x196.png" sizes="196x196"/>
-    <link rel="icon" type="image/png" href="{{ site.url }}/img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="{{ site.url }}/img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="{{ site.url }}/img/favicon/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="{{ site.url }}/img/favicon/favicon-128.png" sizes="128x128" />
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.url }}/img/favicon/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/img/favicon/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/img/favicon/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/img/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.url }}/img/favicon/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/img/favicon/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.url }}/img/favicon/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/img/favicon/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/img/favicon/favicon-128.png" sizes="128x128">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.url }}/assets/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/assets/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/assets/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/assets/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.url }}/assets/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/assets/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.url }}/assets/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/assets/img/favicon/apple-touch-icon-152x152.png">
 
-    <meta name="application-name" content="Pedro Britto"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="{{ site.url }}/img/favicon/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="{{ site.url }}/img/favicon/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="{{ site.url }}/img/favicon/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="{{ site.url }}/img/favicon/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="{{ site.url }}/img/favicon/mstile-310x310.png" />
+    <meta name="application-name" content="Pedro Britto">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="{{ site.url }}/assets/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="{{ site.url }}/assets/img/favicon/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="{{ site.url }}/assets/img/favicon/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="{{ site.url }}/assets/img/favicon/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="{{ site.url }}/assets/img/favicon/mstile-310x310.png">
 
     <!-- OG -->
-    <meta property="og:image" content="{{ site.url }}/img/og/og-pedrobritto.png">
+    <meta property="og:image" content="{{ site.url }}/assets/img/og/og-pedrobritto.png">
 
   </head>
 
