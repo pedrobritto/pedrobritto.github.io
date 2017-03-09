@@ -1,0 +1,35 @@
+# Variables
+title: Pedro Britto
+description:
+  Olá, eu sou o Pedro. Sou um desenvolvedor front end.
+  Aqui compartilho o que aprendi e mostro o meu trabalho.
+baseurl: ""
+url: ""
+
+# Includes
+include: ["_pages"]
+
+# Build settings
+markdown: kramdown
+exclude: [vendor]
+
+sass:
+  sass_dir: _sass
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Pedro Britto"
+      layout: "post"
+      permalink: /blog/:title
+      comments: true
