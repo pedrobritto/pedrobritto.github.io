@@ -10,16 +10,13 @@
     <title>{{ site.title }}</title>
     {% endif %}
 
-    <!-- sharethis -->
-    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58c1b42b16d92d001135cdb9&product=inline-share-buttons"></script>
-
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     {% else %}
     <meta name="description" content="{{ site.description }}">
     {% endif %}
 
-    <link rel="canonical" href="{{ site.url }}{{ page.permalink }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">

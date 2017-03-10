@@ -1,0 +1,76 @@
+.social {
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social li {
+  display: flex;
+  flex: 1; // from .social
+  zoom: 1;
+}
+
+.social li a {
+  // flex: 1; // from .social li
+  font-family: si!important;
+  font-style: normal;
+  font-weight: 400;
+
+  width: 100%;
+  line-height: 2rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  color: #ffffff;
+  background-color: none;
+}
+
+.social-icon-last {
+  margin:0 !important;
+}
+
+.social-facebook {
+  background-color: #3e5b98;
+}
+.social-facebook:before {
+  content:'\e041';
+}
+.social-twitter {
+  background-color: #4da7de;
+}
+.social-twitter:before {
+  content:'\e040';
+}
+.social-linkedin {
+  background-color: #3371b7;
+}
+.social-linkedin:before {
+  content:'\e049';
+}
+.social-mail {
+  background-color: #525252;
+}
+.social-mail:before {
+  content:'\e01f';
+}
+.social-whatsapp {
+  background-color: #20B038;
+}
+.social-whatsapp:before {
+  content:'\e01b';
+}
