@@ -3,8 +3,8 @@ title: Pedro Britto
 description:
   Olá, eu sou o Pedro. Sou um desenvolvedor front end.
   Aqui compartilho o que aprendi e mostro o meu trabalho.
-basepermalink: ""
-permalink: "https://pedrobritto.github.io"
+baseurl: ""
+url: "https://pedrobritto.github.io"
 
 username_twitter: pibritto
 

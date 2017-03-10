@@ -1,12 +1,33 @@
-<!-- <div class="sharethis-inline-share-buttons"></div> -->
-
 <div class="social-share">
   <ul class="social">
     <li>
-      <a class="social-facebook" target="_blank" rel="nofollow" href="https://www.facebook.com/sharer.php?u=https://pedrobritto.github.io{{ page.url }}"></a></li>
+      <a class="social-facebook" target="_blank" rel="nofollow" href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}"></a></li>
     <li>
       <a class="social-twitter" target="_blank" rel="nofollow" href="https://twitter.com/intent/tweet?text={{ page.title }}:&url={{ site.url }}{{ page.url }}&via={{ site.username_twitter }}&related={{ site.username_twitter }}"></a></li>
     <li>
       <a class="social-linkedin social-icon-last" target="_blank" rel="nofollow" href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}"></a></li>
   </ul>
 </div>
+
+<script>
+
+const social_facebook = document.querySelector('.social-facebook');
+const social_twitter = document.querySelector('.social-twitter');
+const social_linkedin = document.querySelector('.social-linkedin');
+
+social_facebook.addEventListener('click', function() {
+  window.open (social_facebook.href,
+    "mywindow","menubar=1,resizable=1,width=500,height=350");
+});
+
+social_twitter.addEventListener('click', function() {
+  window.open (social_twitter.href,
+    "mywindow","menubar=1,resizable=1,width=500,height=260");
+});
+
+social_linkedin.addEventListener('click', function() {
+  window.open (social_linkedin.href,
+    "mywindow","menubar=1,resizable=1,width=500,height=350");
+});
+
+</script>
