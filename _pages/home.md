@@ -1,7 +1,8 @@
 ---
 layout: home
-title: Desenvolvedor Front End
 permalink: /
+
+title: Desenvolvedor Front End
 ---
 
 # Olá! Eu sou o Pedro, um Desenvolvedor Front End.
