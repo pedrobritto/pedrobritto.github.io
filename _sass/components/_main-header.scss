@@ -9,57 +9,42 @@
   margin-bottom: 2rem;
   border-bottom: $base-border;
 
-  .logo {
-    font-size: 3rem;
-    .text {
-      font-weight: 900;
-      color: inherit;
-    }
-    line-height: 1;
-  }
-}
-
-@media #{$break-header} {
-  .main-header {
+  @media #{$break-header} {
     flex-direction: row;
+  }
 
-    .logo {
+  .logo {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @media #{$break-header} {
       font-size: 2rem;
     }
+
+    .text {
+      font-weight: bold;
+      color: inherit;
+    }
   }
 }
 
-@media (max-width: 370px) {
-  .main-header .logo .text {
-    font-size: 2.5rem;
-  }
-}
+// Navigation -----------------
 
 .main-nav {
   margin: 0 0 1rem;
 
-  ul {
-    display: flex;
-    flex-flow: row wrap;
-    list-style-type: none;
-    padding: 0;
+  @media #{$break-header} {
     margin: 0;
   }
 
   .item {
     font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: bold;
   }
 
   .item:not(:last-of-type) {
     margin-right: 1.2rem;
-    // list-style: disc;
-  }
-}
-
-@media #{$break-header} {
-  .main-nav {
-    margin: 0;
   }
 }
