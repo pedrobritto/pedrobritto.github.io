@@ -14,19 +14,17 @@
   }
 
   .logo {
-    font-family: 'Merriweather Sans', sans-serif;
     font-size: 2.5rem;
-    letter-spacing: -1px;
+    font-weight: normal;
     line-height: 1;
 
     @media #{$break-header} {
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
-
-    .text {
-      font-weight: bold;
-      color: inherit;
-    }
+  }
+  
+  .logo .text {
+    color: inherit;
   }
 }
 

@@ -1,13 +1,17 @@
-// Colors
-
+// Colors ------------------------
 $c-primary: #54afe9;
-// $c-primary: #6cadf1;
-// $c-primary: #f16c6c;
 
-$base-border: 2px solid rgba($c-primary, 0.1);
 
-// Break Points
+// Font Stacks
+$font-serif: 'Source Serif Pro', serif;
+$font-sans : 'Merriweather Sans', sans-serif;
+
+
+// Break Points -----------------------
 $break-header: '(min-width: 580px)';
 
-// Other
+
+// Other -------------------------
 $footer-height: 165px;
+
+$base-border: 2px solid rgba($c-primary, 0.1);
