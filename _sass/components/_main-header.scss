@@ -22,7 +22,7 @@
       font-size: 1.7rem;
     }
   }
-  
+
   .logo .text {
     color: inherit;
   }
@@ -38,8 +38,8 @@
   }
 
   .item {
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-family: $font-sans;
+    font-size: 1rem;
   }
 
   .item:not(:last-of-type) {
