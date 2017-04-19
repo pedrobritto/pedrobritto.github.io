@@ -12,6 +12,8 @@
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h2>
 
+      <p class="meta-info">{{ post.publishdate }}</p>
+
       {% if post.excerpt %}
       <p class="description">{{ post.excerpt }}</p>
       {% else %}
