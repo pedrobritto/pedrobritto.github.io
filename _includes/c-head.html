@@ -5,25 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if page.title %}
-    <title>{{ site.title }} | {{ page.title }}</title>
+      <title>{{ site.title }} | {{ page.title }}</title>
     {% else %}
-    <title>{{ site.title }}</title>
+      <title>{{ site.title }}</title>
     {% endif %}
 
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
+    {% if page.descrsocial-shareiption %}
+      <meta name="description" content="{{ page.description }}">
     {% else %}
-    <meta name="description" content="{{ site.description }}">
+      <meta name="description" content="{{ site.description }}">
     {% endif %}
 
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Domine|Oswald:300,700" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="{{ site.url }}/assets/img/favicon/favicon-196x196.png" sizes="196x196">
@@ -57,4 +56,3 @@
   </head>
 
   <body>
-    <div class="wrapper">

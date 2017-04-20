@@ -1,30 +1,38 @@
-{% include head.html %}
+{% include c-head.html %}
+  {% include c-nav-bar.html %}
 
-<div class="footer-push">
-  {% include header.html %}
 
-  <h1 class="blog-title">{{ page.title }}</h1>
+  <main class="l-main-content">
+    <div class="l-container">
+      <h1 class="page__title">{{ page.title }}</h1>
 
-  {% for post in site.posts %}
+      {% for post in site.posts %}
 
-    <article class="post-summary">
-      <h2 class="title">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
+      <article class="post-summary">
+        <h2 class="post-summary__title t3">
+          <a href="{{ post.url }}">
+            <div class="post-summary__image"
+              style="background-image: url({{ site.url }}/assets/img/posts/{{ post.image }})"
+            ></div>
+          </a>
+          <a class="post-summary__title" href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
 
-      <p class="meta-info">{{ post.publishdate }}</p>
+        <p class="post-summary__meta-info s2">{{ post.publishdate }}</p>
 
-      {% if post.excerpt %}
-      <p class="description">{{ post.excerpt }}</p>
-      {% else %}
-      <p class="description">{{ post.description }}</p>
-      {% endif %}
+        {% if post.excerpt %}
+        <p class="post-summary__description">{{ post.excerpt }}</p>
+        {% else %}
+        <p class="post-summary__description">{{ post.description }}</p>
+        {% endif %}
 
-      <a class="button" href="{{ post.url }}">Leia Mais</a>
-    </article>
+        <a class="button" href="{{ post.url }}">Continuar Lendo...</a>
+      </article>
 
-  {% endfor %}
+      {% endfor %}
 
-</div>
+    </div>
+  </main>
 
-{% include footer.html %}
+
+{% include c-footer.html %}

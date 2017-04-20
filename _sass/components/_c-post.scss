@@ -1,0 +1,32 @@
+.post {
+  margin-top: -3rem;
+}
+
+.post__hero {
+  height: 400px;
+
+  background-position: center;
+  background-size: cover;
+
+  .hero__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+}
+
+
+.post__content {
+  padding: 3rem 0;
+}
+
+.post__footer {
+  //
+}

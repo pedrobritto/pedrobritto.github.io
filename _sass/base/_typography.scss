@@ -1,12 +1,16 @@
-/* Typography */
-/* —————————————————————————————— */
+// Typography
+
+body {
+  font-family: $font-body;
+  font-size: 19px;
+  color: #424246;
+  line-height: 1.7;
+}
 
 p {
   font-weight: normal;
-  font-size: 19px;
-  line-height: 1.6;
-
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,10 +19,16 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   line-height: 1.2;
 
-  margin: 1rem 0;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  font-size: 2rem;
+h1, .t1 { font-size: 2.747rem; margin-bottom: 1.2rem;}
+h2, .t2 { font-size: 2.388rem; }
+h3, .t3 { font-size: 2.077rem; }
+h4, .t4 { font-size: 1.806rem; }
+h5, .t5 { font-size: 1.57rem; }
+h6, .t6 { font-size: 1.366rem; }
 
-}
+.s1 { font-size: 1.033rem; }
+.s2 { font-size: 0.898rem; }

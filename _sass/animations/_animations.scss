@@ -1,0 +1,10 @@
+.a-border::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid red;
+  transform: scaleX(0);
+
+}
+.a-border:hover::after {
+  transform: scaleX(1);
+}

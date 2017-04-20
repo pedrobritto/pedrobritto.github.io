@@ -1,0 +1,8 @@
+- name: Início
+  url: /
+- name: Blog
+  url: /blog/
+- name: Notas
+  url: /notas/
+- name: Portfólio
+  url: /portfolio/

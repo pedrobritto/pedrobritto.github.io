@@ -1,20 +1,45 @@
 ---
 ---
 
-// base
-@import "base/config";
+// Libs and Helpers
+@import "lib/normalize";
+@import "helpers/helpers";
+
+
+// Variables
+@import "variables/colors";
+@import "variables/breakpoints";
+@import "variables/typography";
+@import "variables/others";
+
+// Base
 @import "base/base";
-@import "base/fonts";
-@import "base/layout";
+@import "base/icons";
 @import "base/typography";
-@import "base/cv";
 
 
-// components
-@import "components/main-header";
-@import "components/buttons";
-@import "components/footer";
-@import "components/social-links";
-@import "components/social-share";
-@import "components/blog";
-@import "components/post";
+// Layouts
+@import "layouts/layouts";
+@import "layouts/grids";
+
+
+// Objects
+@import "objects/o-social-links";
+@import "objects/o-buttons";
+
+
+// Components
+@import "components/c-nav-bar";
+@import "components/c-footer";
+@import "components/c-social-share";
+@import "components/c-blog";
+@import "components/c-post";
+@import "components/c-cv";
+
+
+// Animations
+@import "animations/animations";
+
+
+// Utilities
+@import "utilities";

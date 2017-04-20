@@ -1,13 +1,15 @@
-{% include head.html %}
+{% include c-head.html %}
 
-<div class="footer-push">
-  {% include header.html %}
+<!-- <div class="footer-push"> -->
+  {% include c-nav-bar.html %}
 
-  <h1 class="blog-title">{{ page.title }}</h1>
-  <div class="content">
-    {{ content }}
-  </div>
+  <main class="l-main-content">
+    <div class="l-container">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </div>
+  </main>
 
-</div>
+<!-- </div> -->
 
-{% include footer.html %}
+{% include c-footer.html %}

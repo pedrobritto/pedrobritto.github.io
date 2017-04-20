@@ -1,16 +1,34 @@
-{% include head.html %}
-  <div class="footer-push">
-    {% include header.html %}
+{% include c-head.html %}
 
-    <article class="blog-post">
-      <header>
-        <h1 class="heading">{{ page.title }}</h1>
-      </header>
-      <p class="meta-info">{{ page.publishdate }}</p>
-      {{ content }}
-    </article>
+    {% include c-nav-bar.html %}
 
-    {% include social-share.html %}
-    {% include disqus.html %}
-  </div>
-{% include footer.html %}
+    <main class="l-main-content">
+      <div class="post">
+        <header>
+          <div class="post__hero"
+          style="background-image: url({{ site.url }}/assets/img/posts/{{ page.image}})">
+            <div class="hero__overlay">
+              <div class="l-container">
+                <h1 class="post__title">{{ page.title }}</h1>
+                <p class="post__subtitle">{{ page.subtitle }}</p>
+                <p class="post__meta s1">{{ page.publishdate }}</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="l-container">
+          <article class="post__content">
+            {{ content }}
+          </article>
+
+          <div class="post__footer">
+            {% include c-social-share.html %}
+            <div></div>
+            {% include c-disqus.html %}
+          </div>
+        </div>
+      </div>
+    </main>
+
+{% include c-footer.html %}

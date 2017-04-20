@@ -1,0 +1,19 @@
+<div class="c-nav-bar l-nav-bar">
+  <div class="l-container">
+    <div class="c-nav-bar__logo t5">
+      <a class="logo__text" href="{{ site.url }}">pedrobritto</a>
+    </div>
+
+    <nav class="c-nav-bar__menu">
+      {% for menu-item in site.data.menu %}
+        <a class="o-menu__item l-menu__item" href="{{ site.url }}{{ menu-item.url }}">{{ menu-item.name }}</a>
+      {% endfor %}
+    </nav>
+
+    <nav class="c-nav-bar__menu-modal" style="display: none;">
+      {% for menu-item in site.data.menu %}
+        <a class="o-menu__item l-menu__item" href="{{ site.url }}{{ menu-item.url }}">{{ menu-item.name }}</a>
+      {% endfor %}
+    </nav>
+  </div> <!-- /container -->
+</div> <!-- /c-nav-bar -->

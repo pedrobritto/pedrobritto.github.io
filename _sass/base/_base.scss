@@ -1,5 +1,4 @@
-/* Base  */
-/* —————————————————————————————— */
+// Base Styles and Custom Resets
 
 html {
   box-sizing: border-box;
@@ -13,9 +12,6 @@ html {
 }
 
 body {
-  font-family: $font-sans;
-  font-size: 19px;
-  color: #323236;
   margin: 0;
   padding: 0;
 }
