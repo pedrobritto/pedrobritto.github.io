@@ -2,19 +2,19 @@
 /* —————————————————————————————— */
 
 .l-container {
-  max-width: 45rem;
+  max-width: 43rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.2rem;
 }
 
 .l-footer-push {
-  $footer-height: 72px;
+  $footer-height: 178px;
   min-height: calc(100vh - #{$footer-height});
 }
 
 .l-main-content {
-  $footer-height: 136px;
-  $nav-bar-height: 82px;
+  $footer-height: 178px;
+  $nav-bar-height: 61px;
   min-height: calc(100vh - #{$footer-height} - #{$nav-bar-height});
   padding-top: 3rem;
   padding-bottom: 3rem;

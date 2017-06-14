@@ -1,19 +1,38 @@
 <div class="c-nav-bar l-nav-bar">
   <div class="l-container">
-    <div class="c-nav-bar__logo t5">
-      <a class="logo__text" href="{{ site.url }}">pedrobritto</a>
+    <div class="c-nav-bar__logo t6">
+      <a class="logo__text" href="{{ site.url }}">Pedro Britto</a>
     </div>
 
-    <nav class="c-nav-bar__menu">
+    <nav class="c-menu">
       {% for menu-item in site.data.menu %}
         <a class="o-menu__item l-menu__item" href="{{ site.url }}{{ menu-item.url }}">{{ menu-item.name }}</a>
       {% endfor %}
     </nav>
 
-    <nav class="c-nav-bar__menu-modal" style="display: none;">
-      {% for menu-item in site.data.menu %}
-        <a class="o-menu__item l-menu__item" href="{{ site.url }}{{ menu-item.url }}">{{ menu-item.name }}</a>
-      {% endfor %}
-    </nav>
+    <div class="menu-toggle" id="menu--modal__open">
+      <i class="menu-toggle__icon fa fa-bars" aria-hidden="true"></i>
+      <!-- <div class="menu-toggle__text">Menu</div> -->
+    </div>
+
   </div> <!-- /container -->
 </div> <!-- /c-nav-bar -->
+
+
+<div class="c-menu--modal" id="menu--modal">
+  <nav class="c-menu--modal__content">
+
+    <div class="menu-toggle l-menu-toggle--margin u-align-right" id="menu--modal__close">
+      <i class="fa fa-times menu-toggle__icon" aria-hidden="true"></i>
+      <!-- <div class="menu-toggle__text">Fechar</div> -->
+    </div>
+
+    <div class="menu--modal__wrapper">
+      {% for menu-item in site.data.menu %}
+        <a class="o-menu--modal__item l-menu--modal__item" href="{{ site.url }}{{ menu-item.url }}">{{ menu-item.name }}</a>
+      {% endfor %}
+    </div>
+
+  </nav>
+</div>
+

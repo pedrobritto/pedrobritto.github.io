@@ -1,10 +1,11 @@
 .resume-section {
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
 .resume-section > .heading {
   margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 /* SECTION: Skills */
@@ -31,72 +32,50 @@
 
 /* skill levels */
 
-.score {
-  color: white;
-  border-radius: 3px;
-  padding: 0.35rem .5rem;
-  float: right;
-
-  font-size: .75rem;
-  font-weight: 400;
-
-  &.lvl-1 {
-    background-color: #4CC2D8;
-
-    &::after {
-      content: "Básico";
-    }
-  }
-
-  &.lvl-2 {
-    background-color: #996cdd;
-
-    &::after {
-      content: "Médio";
-    }
-  }
-
-  &.lvl-3 {
-    background-color: #F95471;
-
-    &::after {
-      content: "Avançado";
-    }
-  }
-}
+// .score {
+//   color: white;
+//   border-radius: 3px;
+//   padding: 0.35rem .5rem;
+//   float: right;
+//
+//   font-size: .75rem;
+//   font-weight: 400;
+//
+//   &.lvl-1 {
+//     background-color: #4CC2D8;
+//
+//     &::after {
+//       content: "Básico";
+//     }
+//   }
+//
+//   &.lvl-2 {
+//     background-color: #996cdd;
+//
+//     &::after {
+//       content: "Médio";
+//     }
+//   }
+//
+//   &.lvl-3 {
+//     background-color: #F95471;
+//
+//     &::after {
+//       content: "Avançado";
+//     }
+//   }
+// }
 
 
 /* SECTION: Education */
 /* —————————————————————————————— */
 
 .education-list {
-
   list-style-type: none;
   padding-left: 0;
 
-  .summary {
-    // margin-bottom: .5rem;
-
-    .course {
-      margin-bottom: 0;
-    }
-
-    .institution {
-      font-weight: bold;
-    }
-  }
-
-
   .item {
     margin-bottom: 2rem;
-
-    .date {
-      /*font-size: 0.9em;*/
-    }
-
-    .highlight {
-      font-weight: bold;
-    }
   }
 }
 
@@ -106,15 +85,6 @@
 
 .job-entry .summary {
   margin-bottom: 1rem;
-
-  .rolename {
-    margin-bottom: 0;
-  }
-
-  .period {
-    font-size: 0.9rem;
-    /*opacity: 0.5;*/
-  }
 }
 
 .job-entry .activities {
@@ -122,7 +92,9 @@
 }
 
 .job-entry .activities .item {
-  @media (max-width: 40rem) {
-    padding-bottom: .5rem;
+  padding-bottom: .5rem;
+
+  @include mappy-bp(medium) {
+    padding-bottom: initial;
   }
 }

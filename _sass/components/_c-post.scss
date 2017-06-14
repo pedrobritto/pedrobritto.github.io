@@ -3,10 +3,14 @@
 }
 
 .post__hero {
-  height: 400px;
+  height: 300px;
 
   background-position: center;
   background-size: cover;
+
+  @include mappy-bp(small) {
+    height: 400px;
+  }
 
   .hero__overlay {
     display: flex;
@@ -18,8 +22,20 @@
 
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.5);
   }
+}
+
+.post__title {
+  font-size: 2rem;
+
+  @include mappy-bp(small) {
+    font-size: 2.488rem;
+  }
+
+  @include mappy-bp(large) {
+    font-size: 3.5rem;
+  };
 }
 
 

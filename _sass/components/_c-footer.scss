@@ -1,10 +1,22 @@
 .l-footer {
-  padding: 3rem 0;
+  padding: 2.5rem 0;
+}
+
+.l-footer--secondary {
+  padding: 1rem 0;
 }
 
 .c-footer {
   text-align: center;
   background-color: $c-primary;
   color: white;
+}
 
+.c-footer--secondary {
+  @extend .c-footer;
+  background-color: darken($c-primary, 5%);
+}
+
+.c-footer__item:not(:last-of-type) {
+  margin-bottom: 1rem;
 }

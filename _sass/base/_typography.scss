@@ -1,34 +1,38 @@
-// Typography
+// Font Stacks
+$font-heading : 'Cantata One', sans-serif;
+$font-heading : 'Abril Fatface', sans-serif;
+$font-body    : 'Hind', serif;
 
+
+// Typography
 body {
+  color: rgba(black, .8);
   font-family: $font-body;
-  font-size: 19px;
-  color: #424246;
-  line-height: 1.7;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 p {
+  font-size: 20px;
   font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 1rem;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-heading;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
-  line-height: 1.2;
+  line-height: 1.1;
 
   margin: 0;
   padding: 0;
 }
 
-h1, .t1 { font-size: 2.747rem; margin-bottom: 1.2rem;}
-h2, .t2 { font-size: 2.388rem; }
-h3, .t3 { font-size: 2.077rem; }
-h4, .t4 { font-size: 1.806rem; }
-h5, .t5 { font-size: 1.57rem; }
-h6, .t6 { font-size: 1.366rem; }
+h1, .t1 { font-size: 2.488rem; margin-bottom: 1.2rem;}
+h2, .t2 { font-size: 2.074rem; }
+h3, .t3 { font-size: 1.728rem; }
 
-.s1 { font-size: 1.033rem; }
-.s2 { font-size: 0.898rem; }
+.s1 { font-size: .9rem; }
+.s2 { font-size: .8rem; }

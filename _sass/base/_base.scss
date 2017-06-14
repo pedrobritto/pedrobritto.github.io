@@ -2,7 +2,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 *,
@@ -14,17 +14,20 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 a {
-  color: $c-primary;
-  text-decoration: none;
-  transition: .2s;
+  color: $c-secondary;
+  text-decoration: underline;
+  text-decoration-skip: ink;
 }
 
 a:hover,
 a:active {
-  opacity: 0.75;
+  opacity: .8;
 }
 
 
@@ -36,18 +39,19 @@ ul {
 blockquote {
   margin: 1.5rem 0;
   padding-left: .75rem;
-  border-left: 3px solid $c-primary;
+  font-style: italic;
+  border-left: 3px solid $c-secondary;
 }
 
 ::selection {
 	color: white;
-	background-color: $c-primary;
+	background-color: $c-secondary;
 	text-shadow: none;
 }
 
 ::-moz-selection {
 	color: white;
-	background-color: $c-primary;
+	background-color: $c-secondary;
 	text-shadow: none;
 }
 

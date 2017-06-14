@@ -5,10 +5,12 @@ publishdate: 7 de maio, 2017
 title:
   Apenas outro blog sobre desenvolvimento
 subtitle:
-image: post-1.jpg
-description:
+image: post-1c-op.jpg
+description: >
+  Olá! Meu nome é Pedro, tenho 26 anos e tenho apenas alguns meses de experiência como desenvolvedor web.
+excerpt: >
+  Olá! Meu nome é Pedro, tenho 26 anos e tenho apenas alguns meses de experiência como desenvolvedor web.
 
-excerpt:
 
 ---
 

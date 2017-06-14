@@ -18,15 +18,15 @@
           <a class="post-summary__title" href="{{ post.url }}">{{ post.title }}</a>
         </h2>
 
-        <p class="post-summary__meta-info s2">{{ post.publishdate }}</p>
+        <div class="meta-info__date">{{ post.publishdate }}</div>
 
         {% if post.excerpt %}
-        <p class="post-summary__description">{{ post.excerpt }}</p>
+          <p class="meta-info__description">{{ post.excerpt }}</p>
         {% else %}
-        <p class="post-summary__description">{{ post.description }}</p>
+          <p class="meta-info__description">{{ post.description }}</p>
         {% endif %}
 
-        <a class="button" href="{{ post.url }}">Continuar Lendo...</a>
+        <a class="button" href="{{ post.url }}">Continuar lendo...</a>
       </article>
 
       {% endfor %}

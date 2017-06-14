@@ -1,10 +1,12 @@
 .o-btn {
-  background-color: $c-primary;
+  background-color: $c-secondary;
 
   color: white;
-  font-family: $font-heading;
+  font-family: $font-body;
+  font-size: 1rem;
 
   padding: 1rem 2rem;
+  border-radius: 3px;
   border: 0;
   outline: 0;
 

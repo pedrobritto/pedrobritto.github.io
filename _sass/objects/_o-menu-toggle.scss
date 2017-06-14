@@ -1,0 +1,30 @@
+.menu-toggle {
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1;
+
+  cursor: pointer;
+
+  &__icon {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  &__text {
+    display: inline-block;
+
+    font-family: $font-body;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    line-height: 1;
+
+    vertical-align: middle;
+    margin-left: .2rem;
+  }
+
+}
+
+.l-menu-toggle--margin {
+  margin-bottom: 2rem;
+}

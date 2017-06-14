@@ -2,7 +2,7 @@
   padding: 2.5rem 0;
 
   &__image {
-    height: 280px;
+    height: 160px;
     background-size: cover;
     background-position: center;
 
@@ -12,6 +12,10 @@
     border-radius: 3px;
 
     transition: .2s;
+
+    @include mappy-bp(small) {
+      height: 280px;
+    };
 
     &:hover {
       opacity: .8;
@@ -23,6 +27,7 @@
   }
 
   &__meta-info {
-    // opacity: .5;
+    // color: rgba(black,0.6);
+    font-style: italic;
   }
 }
