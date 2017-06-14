@@ -1,12 +1,13 @@
 .l-nav-bar {
   padding: 1rem 0;
   color: $c-secondary;
+  line-height: 1;
 
   .l-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -15,6 +16,7 @@
 }
 
 .logo__text {
+  line-height: 1;
   font-family: $font-body;
   font-weight: bold;
   text-decoration: none;

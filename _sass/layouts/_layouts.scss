@@ -1,12 +1,6 @@
 /* Layout */
 /* —————————————————————————————— */
 
-.l-container {
-  max-width: 43rem;
-  margin: 0 auto;
-  padding: 0 1.2rem;
-}
-
 .l-footer-push {
   $footer-height: 178px;
   min-height: calc(100vh - #{$footer-height});

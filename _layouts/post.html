@@ -8,9 +8,9 @@
           <div class="post__hero"
           style="background-image: url({{ site.url }}/assets/img/posts/{{ page.image}})">
             <div class="hero__overlay">
-              <div class="l-container">
+              <div class="l-container--hero">
                 <h1 class="post__title">{{ page.title }}</h1>
-                <p class="post__subtitle">{{ page.subtitle }}</p>
+                <!-- <p class="post__subtitle">{{ page.subtitle }}</p> -->
               </div>
             </div>
           </div>
@@ -18,7 +18,7 @@
 
         <div class="l-container">
           <article class="post__content">
-            <p class="meta-info__date s1">{{ page.publishdate }}</p>
+            <div class="meta-info__date s1">{{ page.publishdate }}</div>
             {{ content }}
           </article>
 

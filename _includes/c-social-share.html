@@ -1,12 +1,10 @@
-<div class="social-share u-mb1">
-  <ul class="social">
-    <li>
-      <a class="social-facebook" target="_blank" rel="nofollow" href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}"></a></li>
-    <li>
-      <a class="social-twitter" target="_blank" rel="nofollow" href="https://twitter.com/intent/tweet?text={{ page.title }}:&url={{ site.url }}{{ page.url }}&via={{ site.username_twitter }}&related={{ site.username_twitter }}"></a></li>
-    <li>
-      <a class="social-linkedin social-icon-last" target="_blank" rel="nofollow" href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}"></a></li>
-  </ul>
+<div class="c-social-share">
+  <a class="c-social-share__item icon-facebook" target="_blank" rel="nofollow" href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}">
+  </a>
+  <a class="c-social-share__item icon-twitter" target="_blank" rel="nofollow" href="https://twitter.com/intent/tweet?text={{ page.title }}:&url={{ site.url }}{{ page.url }}&via={{ site.username_twitter }}&related={{ site.username_twitter }}">
+  </a>
+  <button class="c-social-share__item icon-comment" id="load-disqus-comments">
+  </button>
 </div>
 
 <script>

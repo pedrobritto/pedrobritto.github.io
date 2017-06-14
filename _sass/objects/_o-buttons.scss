@@ -1,11 +1,18 @@
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
 .o-btn {
+  color: white;
   background-color: $c-secondary;
 
-  color: white;
   font-family: $font-body;
   font-size: 1rem;
 
-  padding: 1rem 2rem;
+  line-height: 1;
+  padding: 0.7em 1em;
   border-radius: 3px;
   border: 0;
   outline: 0;

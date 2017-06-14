@@ -8,16 +8,13 @@ $font-body    : 'Hind', serif;
 body {
   color: rgba(black, .8);
   font-family: $font-body;
-  font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.35;
+  hyphens: manual; //needs to insert &shy; in html
 }
 
 p {
-  font-size: 20px;
   font-weight: normal;
-
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin: 1.1rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,9 +27,22 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-h1, .t1 { font-size: 2.488rem; margin-bottom: 1.2rem;}
-h2, .t2 { font-size: 2.074rem; }
-h3, .t3 { font-size: 1.728rem; }
+.t0  {
+  font-size: ms(4);
+}
+
+h1, .t1 {
+  font-size: ms(3);
+  // @include mappy-bp()
+}
+
+h2, .t2 {
+  font-size: ms(2);
+}
+
+h3, .t3 {
+  font-size: ms(1);
+}
 
 .s1 { font-size: .9rem; }
 .s2 { font-size: .8rem; }

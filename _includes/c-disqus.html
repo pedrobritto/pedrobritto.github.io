@@ -1,14 +1,13 @@
 {% if page.comments %}
 
-<button class="o-btn o-btn--full" id="load-comments">
+<!-- <button class="o-btn o-btn--full" id="load-comments">
   <i class="fa fa-commenting-o" aria-hidden="true"></i>
-  Deixar um comentário
-</button>
+</button> -->
 <div id="disqus_thread"></div>
 
 <script>
 
-const loadComments = document.querySelector('#load-comments');
+const loadComments = document.querySelector('#load-disqus-comments');
 
 loadComments.addEventListener('click', function() {
 
@@ -28,10 +27,10 @@ loadComments.addEventListener('click', function() {
 
   loadComments.classList.add("fade");
   // remove button after 300ms
-  setTimeout( function() {
-    loadComments.style.display = "none";
-
-  }, 300);
+  // setTimeout( function() {
+  //   loadComments.style.display = "none";
+  //
+  // }, 300);
 
 });
 

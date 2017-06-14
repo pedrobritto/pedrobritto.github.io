@@ -2,7 +2,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 125%;
 }
 
 *,
@@ -15,7 +15,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: auto;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -23,6 +22,7 @@ a {
   color: $c-secondary;
   text-decoration: underline;
   text-decoration-skip: ink;
+  transition: $transition-default;
 }
 
 a:hover,

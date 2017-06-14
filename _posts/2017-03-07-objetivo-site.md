@@ -3,20 +3,17 @@ permalink: /blog/objetivo-site/
 publishdate: 7 de maio, 2017
 
 title:
-  Apenas outro blog sobre desenvolvimento
+  Apenas outro blog sobre desen&shy;volvimento
 subtitle:
 image: post-1c-op.jpg
 description: >
-  Olá! Meu nome é Pedro, tenho 26 anos e tenho apenas alguns meses de experiência como desenvolvedor web.
-excerpt: >
-  Olá! Meu nome é Pedro, tenho 26 anos e tenho apenas alguns meses de experiência como desenvolvedor web.
 
 
 ---
 
-Olá! Meu nome é Pedro, tenho 26 anos e tenho apenas alguns meses de experiência como desenvolvedor web.
+Olá! Me chamo Pedro, tenho 26 anos e não faz muito tempo que comecei minha carreira como desenvolvedor web.
 
-Sim, sou um iniciante na área. Manjo um pouco de HTML e CSS e ainda estou engatinhando em JavaScript, mas mesmo assim resolvi criar este site para ajudar outros iniciantes como eu no processo de aprendizagem na área.
+Ainda sou um iniciante na área. Manjo um pouco de HTML e CSS e ainda estou engatinhando em JavaScript, mas mesmo assim resolvi criar este site para ajudar outros iniciantes como eu no processo de aprendizagem na área.
 
 A ideia é postar guias de fácil entendimento e códigos sobre assuntos que venho aprendendo -- até porque esse é um ótimo jeito de fixar meu conhecimento também!
 
