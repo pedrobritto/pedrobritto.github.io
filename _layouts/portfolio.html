@@ -1,0 +1,28 @@
+{% include c-head.html %}
+
+  {% include c-nav-bar.html %}
+
+  <main class="l-main-content">
+    <div class="l-container">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </div>
+
+
+    <div class="l-container">
+      {% for item in site.portfolio %}
+        <div class="portfolio-item">
+          <!-- <a href="{{ item.url }}">
+            <img src="{{ site.url }}/assets/img/portfolio/{{ item.image }}" alt="">
+          </a> -->
+          <h2 class="portfolio-item__title">
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          </h2>
+          <p class="portfolio-item__subtitle">{{ item.subtitle }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+  </main>
+
+{% include c-footer.html %}

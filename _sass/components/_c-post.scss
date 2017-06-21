@@ -12,6 +12,12 @@
     height: 400px;
   }
 
+  &--gradient {
+    background: $c-secondary;
+    background: linear-gradient(to left, lighten($c-secondary, 15%), $c-secondary);
+
+  }
+
   .hero__overlay {
     display: flex;
     justify-content: center;
@@ -23,6 +29,19 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
+
+    &--gradient {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+      color: white;
+
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+    }
   }
 }
 
@@ -42,11 +61,22 @@
   padding: 3rem 0;
 
   p:first-of-type {
-    font-size: 1.2rem;
     font-weight: bold;
-    font-style: italic;
-    line-height: 1.1;
   }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 3rem;
+  }
+}
+
+.post__image {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 0 .5rem;
 }
 
 .post__footer {

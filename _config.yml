@@ -4,7 +4,7 @@ description:
   Olá! Eu sou o Pedro, um desenvolvedor front end.
   Aqui compartilho tudo que aprendi em meus estudos.
 baseurl: ""
-url: "https://pedrobritto.github.io"
+url: "http://pedrobritto.com"
 
 username_twitter: pibritto
 
@@ -18,19 +18,29 @@ exclude: [vendor]
 sass:
   sass_dir: _sass
 
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:name/ # outputs every service.md file into its own folder under /servicos/
+
 # Defaults
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
 
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       author: "Pedro Britto"
       layout: "post"
       comments: true
+
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio-item"

@@ -18,6 +18,10 @@ body {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: $c-secondary;
   text-decoration: underline;

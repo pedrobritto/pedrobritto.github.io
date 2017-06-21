@@ -1,1 +1,37 @@
 // Grid layouts
+/* Grid ——————————————————————————————————————— */
+
+// Variables
+$gutter: 20px;
+
+@mixin grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin grid__item {
+  flex: 0 0 100%;
+}
+
+.grid--center {
+  justify-content: center;
+}
+
+.grid--two-col {
+  @include grid;
+
+  @include mappy-bp(small) {
+    margin-left: calc(-#{$gutter} / 2);
+    margin-right: calc(-#{$gutter} / 2);
+  }
+
+  > .grid__item {
+    @include grid__item;
+
+    @include mappy-bp(small) {
+      flex: 0 0 calc((100% - #{$gutter} * 2) / 2);
+      margin-left: calc(#{$gutter} / 2);
+      margin-right: calc(#{$gutter} / 2);
+    }
+  }
+}

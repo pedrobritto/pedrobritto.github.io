@@ -1,0 +1,49 @@
+{% include c-head.html %}
+
+    {% include c-nav-bar.html %}
+
+    <main class="l-main-content">
+      <div class="post">
+        <header>
+          <div class="post__hero post__hero--gradient">
+            <div class="hero__overlay hero__overlay--gradient">
+              <div class="l-container--hero">
+                <h1 class="post__title">{{ page.title }}</h1>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="l-container">
+          <article class="post__content">
+            {{ content }}
+            {% include c-signature.html %}
+          </article>
+        </div>
+
+      </div>
+    </main>
+
+    {% if page.next.url %}
+      <div class="portfolio-footer">
+        <div class="l-container">
+          <a class="portfolio-footer__link"href="{{ page.next.url }}">
+            <h1 class="portfolio-footer__title">Próximo case</h1>
+            <p class="portfolio-footer__subtitle">{{ page.next.title }}</p>
+          </a>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.previous.url %}
+      <div class="portfolio-footer">
+        <div class="l-container">
+          <a class="portfolio-footer__link"href="{{ page.previous.url }}">
+            <h1 class="portfolio-footer__title">Case anterior</h1>
+            <p class="portfolio-footer__subtitle">{{ page.previous.title }}</p>
+          </a>
+        </div>
+      </div>
+    {% endif %}
+
+{% include c-footer.html %}
