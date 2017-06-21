@@ -4,7 +4,7 @@ permalink: /
 
 title: Desenvolvedor Front End
 ---
-{: .page-title}
+{: .page-title} 
 # Olá, eu sou o Pedro, um Desenvolvedor Front End.
 
 É um prazer!

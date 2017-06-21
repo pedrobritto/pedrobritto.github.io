@@ -14,7 +14,7 @@
 
   &--gradient {
     background: $c-secondary;
-    background: linear-gradient(to left, lighten($c-secondary, 15%), $c-secondary);
+    background: linear-gradient(to left, lighten($c-primary, 15%), $c-primary);
 
   }
 

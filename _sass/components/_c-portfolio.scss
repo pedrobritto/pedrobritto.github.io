@@ -20,16 +20,6 @@
   color: white;
   padding: 4rem 0;
 
-  transition: .2s;
-  cursor: pointer;
-
-  &:hover,
-  &:active {
-    background-color: lighten($c-secondary, 5%);
-  }
-
-  //
-
   &__title {
     color: white;
     line-height: 1;
