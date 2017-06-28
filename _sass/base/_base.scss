@@ -41,9 +41,10 @@ ul {
 }
 
 blockquote {
+  font-size: .9rem;
   margin: 1.5rem 0;
   padding-left: .75rem;
-  font-style: italic;
+  // font-style: italic;
   border-left: 3px solid $c-secondary;
 }
 
