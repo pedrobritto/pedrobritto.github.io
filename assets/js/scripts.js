@@ -14,6 +14,13 @@ $menuModalClose.addEventListener('click', function() {
   $body.classList.remove('modal-open');
 });
 
+$menuModal.addEventListener('click', function() {
+  $body.classList.remove('menu--modal-is-open');
+  $body.classList.remove('modal-open');
+});
+
+
+
 
 /*  ----------------------------
 Animates on viewport

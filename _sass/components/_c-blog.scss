@@ -24,6 +24,11 @@
 
   &__title {
     margin-bottom: 1rem;
+    font-size: ms(1);
+
+    @include mappy-bp(small) {
+      font-size: ms(2);
+    }
   }
 
   &__meta-info {

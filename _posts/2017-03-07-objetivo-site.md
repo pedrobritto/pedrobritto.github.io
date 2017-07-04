@@ -3,7 +3,7 @@ permalink: /blog/objetivo-site/
 publishdate: 7 de maio, 2017
 
 title:
-  Apenas outro blog sobre desen&shy;volvimento
+  Mais um blog sobre desenvolvimento
 subtitle:
 image: post-1c-op.jpg
 description: >

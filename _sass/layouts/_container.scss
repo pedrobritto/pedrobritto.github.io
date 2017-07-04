@@ -1,11 +1,15 @@
-.l-container {
+@mixin l-container {
   max-width: 35em;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-.l-container--hero {
+.l-container {
+  @include l-container;
+}
+
+.l-container--hero,
+.l-container--nav {
+  @include l-container;
   max-width: 40em;
-  margin: 0 auto;
-  padding: 0 1rem;
 }
