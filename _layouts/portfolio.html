@@ -12,13 +12,9 @@
     <div class="l-container">
       {% for item in site.portfolio %}
         <div class="portfolio-item">
-          <!-- <a href="{{ item.url }}">
-            <img src="{{ site.url }}/assets/img/portfolio/{{ item.image }}" alt="">
-          </a> -->
           <h2 class="portfolio-item__title">
             <a href="{{ item.url }}">{{ item.title }}</a>
           </h2>
-          <!-- <p class="portfolio-item__subtitle">{{ item.subtitle }}</p> -->
         </div>
       {% endfor %}
     </div>

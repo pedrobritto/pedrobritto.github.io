@@ -1,9 +1,9 @@
 .portfolio-item {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 
   &__title {
     font-size: ms(1);
-    
+
     @include mappy-bp(small) {
       font-size: ms(2);
     }
@@ -12,7 +12,6 @@
   &__subtitle {
     margin-top: .5rem;
     font-size: 0.9rem;
-    // font-style: italic;
     color: rgba(black, 0.6);
   }
 }

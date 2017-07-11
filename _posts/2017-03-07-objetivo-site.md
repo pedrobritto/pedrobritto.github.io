@@ -7,11 +7,9 @@ title:
 subtitle:
 image: post-1c-op.jpg
 description: >
-
-
 ---
 
-Olá! Me chamo Pedro, tenho 26 anos e não faz muito tempo que comecei minha carreira como desenvolvedor web.
+Olá! Me chamo Pedro, tenho 26 anos e não faz muito tempo que comecei minha carreira como desenvolvedor web. Sou velho? Talvez. Mesmo assim, resolvi arriscar em uma nova carreira.
 
 Ainda sou um iniciante na área. Manjo um pouco de HTML e CSS e ainda estou engatinhando em JavaScript, mas mesmo assim resolvi criar este site para ajudar outros iniciantes como eu no processo de aprendizagem na área.
 

@@ -8,13 +8,13 @@
 
 .c-footer {
   text-align: center;
-  background-color: $c-primary;
+  background-color: lighten($c-dark-blue, 10%);
   color: white;
 }
 
 .c-footer--secondary {
   @extend .c-footer;
-  background-color: darken($c-primary, 5%);
+  background-color: $c-dark-blue;
 }
 
 .c-footer__item:not(:last-of-type) {

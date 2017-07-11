@@ -1,3 +1,5 @@
+"use strict";
+
 var $body = document.querySelector("body");
 
 var $menuModal = document.querySelector("#menu--modal");

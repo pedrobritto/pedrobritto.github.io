@@ -1,6 +1,5 @@
 .c-menu {
   font-family: $font-body;
-  // font-weight: bold;
   line-height: 1;
 
   display: none;
@@ -12,7 +11,7 @@
 
 .l-menu__item {
   padding: .25rem 0;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 
   &:last-child {
     margin: 0;
