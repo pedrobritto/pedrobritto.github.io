@@ -6,8 +6,7 @@ image: dummy.jpg
 
 Fundada em 2013 em Fortaleza, A Amora Special Gourmet é uma empresa especializada em Buffets deliciosos para ambientes e eventos corporativos.
 
-<!-- [Visite o site](http://amorasg.com) -->
-Link para o site em breve.
+[Veja o site no ar](http://amorasg.com)
 
 
 
