@@ -1,10 +1,14 @@
 .portfolio-item {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+
+  @include mappy-bp( small ) {
+    margin-bottom: 2.5rem;
+  }
 
   &__title {
     font-size: ms(1);
 
-    @include mappy-bp(small) {
+    @include mappy-bp( small ) {
       font-size: ms(2);
     }
   }
