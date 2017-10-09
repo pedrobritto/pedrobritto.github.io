@@ -3,32 +3,19 @@ permalink: /blog/frontend-antes-de-comecar/
 publishdate: 11 de julho, 2017
 
 title:
-  Indo além das ferramentas e do conhecimento ténico
+  Além das ferramentas e conhecimento ténico
 subtitle:
 description:
 ---
 
-Você ouviu falar sobre front-end em algum lugar da internet. Talvez um amigo seu seja desenvolvedor. Criar interfaces e aplicações web completas, uau! Isso parece interessante o suficiente para você começar a fazer alguma coisa, então você resolve estudar as principais tecnologias e ferramentas.
+## Além das ferramentas
 
-Você começa a aprender um pouco sobre como funciona a o HTML, suas tags, elementos e características gerais. Você até aprendeu a usar `<section>` e `<article>` de forma correta!
-
-Ao mesmo tempo, você vê alguns tutoriais de introdução a CSS e aprende sobre os seletores básicos, lembra de várias propriedades de cor e já consegue se virar bem na montagem de layouts mais simples.
-
-É tudo tão instigante e divertido que parece que o tempo para. Aprender um pouco mais sobre o mundo da internet e como tudo isso funciona acaba ficando um tanto viciante e criar novas aplicações é sua nova ideia de diversão.
-
-Mas as vezes é preciso fazer uma pequena pausa e refletir no que estamos fazendo. Claro, dedicar um bom tempo para exercícios e criar coisas novas é importantíssimo. Continue fazendo isso.
-
-Porém, as vezes estamos tão focados em aprender a utilizar as linguagens e ferramentas que acabamos nos esquecendo do objetivo daquilo tudo.
-
-## Indo além das ferramentas
-
-Se você está aprendendo a desenvolver seus primeiros sites, saiba que o objetivo do seu trabalho não é saber escrever HTML, CSS e JavaScript.
+Por mais divertido e instigante que seja, o objetivo do seu trabalho não é saber escrever HTML, CSS e JavaScript. Claro, você não conseguirá fazer nada sem eles, mas
 
 > Seu trabalho é entregar um produto que solucione o problema do seu cliente.
 
-Quando um cliente contrata você para criar um site para ele, o que ele realmente quer é uma presença na internet que alcance seu público e que tenha interações positivas com esse site.
+Quando um cliente te contrata para criar um site ou aplicação web o que ele realmente quer é uma presença na internet que alcance seu público e que tenha interações positivas com esse site.
 
-Claro, para desenvolver um site você precisa do conhecimento técnico, mas para criar um site que solucione os problemas do seu cliente você precisará saber muito mais do que isso.
 
 ## Se tornando multidisciplinar
 
