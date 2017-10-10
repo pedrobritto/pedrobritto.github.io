@@ -1,5 +1,7 @@
 - name: Artigos
   url: /blog/
+- name: Snippets
+  url: /snippets/
 - name: Portfólio
   url: /portfolio/
 - name: Currículo
