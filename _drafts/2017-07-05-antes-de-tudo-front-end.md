@@ -2,26 +2,25 @@
 permalink: /blog/frontend-antes-de-comecar/
 publishdate: 11 de julho, 2017
 
-title:
-  Além das ferramentas e conhecimento ténico
+title: Antes de ser um front, você é um solucionador de problemas
 subtitle:
 description:
 ---
 
+## Introdução
+As vezes esquecemos o que de fato fazemos.
 ## Além das ferramentas
 
-Por mais divertido e instigante que seja, o objetivo do seu trabalho não é saber escrever HTML, CSS e JavaScript. Claro, você não conseguirá fazer nada sem eles, mas
+O trabalho de um desenvolvedor front end não é apenas escrever HTML, CSS e JavaScript. Isso faz parte, mas é apenas o meio para um fim. No final do dia nosso objetivo não é escrever código, mas criar algo que funcione.
 
-> Seu trabalho é entregar um produto que solucione o problema do seu cliente.
+Para a maioria de nós o "algo" a ser criado é um site ou aplicação web.
 
-Quando um cliente te contrata para criar um site ou aplicação web o que ele realmente quer é uma presença na internet que alcance seu público e que tenha interações positivas com esse site.
+> Seu trabalho é criar algo que solucione um problema.
+
+> Antes de ser um desenvolvedor, você é um solucionador de problemas.
 
 
 ## Se tornando multidisciplinar
-
-Você sabe criar qualquer tipo de layout, seja com floats, flexbox ou o mais recente CSS Grid Layout. Mas como escolher o melhor layout para atingir o público do cliente?
-
-Você demorou um pouco, mas conseguiu entender como funcionam todas as propriedades que controlam a aparência das fontes, mas como escolher as melhores fontes para uma boa leitura e ainda assim manter o visual do site atraente e alinhado?
 
 
 ## Nem só de código viverá o desenvolvedor
