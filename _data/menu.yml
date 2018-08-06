@@ -1,5 +1,3 @@
-- name: Artigos
-  url: /blog/
 - name: Portfólio
   url: /portfolio/
 - name: Currículo
