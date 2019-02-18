@@ -6,11 +6,7 @@ description: Um resumo do que eu consigo fazer com um pouco de código.
 
 about_me: >
   <p>
-    Atualmente faço parte da equipe de Desenvolvedores Web na Index Digital. Gosto de resolver problemas, entender o funcionamento de sistemas e de contribuir para criar workflows mais rápidos e limpos.
-  </p>
-
-  <p>
-    Me viro bem com JavaScript, otimização de workflow e princípios de código limpo.
+    Atualmente faço parte da equipe de Desenvolvedores Web na Index Digital. Gosto de pensar em soluções legíveis e elegantes (nessa ordem) para interfaces, entender o funcionamento de sistemas e de contribuir para criar workflows mais rápidos e limpos.
   </p>
 
   <p>
@@ -20,10 +16,7 @@ about_me: >
 
 skills:
   - name: Desenvolvimento em geral
-    quote: >
-      Me considero zeloso com o código que escrevo e gosto de criar partes reutilizáveis. Código bem feito precisa funcionar e ser fácil de manter. Sei fazer/tenho:
     items:
-      - name: Automação e otimização de workflow
       - name: Noções de Orientação à Objetos
       - name: Noções de Programação Funcional
       - name: Noções de Unit Testing
@@ -33,34 +26,32 @@ skills:
     quote: >
       Consigo escrever em:
     items:
-      - name: JavaScript/ECMAScript 2015 - Intermediário
+      - name: JavaScript/ES6 - Intermediário
       - name: Python - Básico
 
   - name: Ferramentas de Desenvolvimento
     quote: >
     Normalmente uso ou experimento com essas ferramentas no dia a dia:
     items:
-      - name: Docker
       - name: Git
       - name: Gulp
-      - name: Node.js e NPM
-      - name: Terminal UNIX
+      - name: Node.js
+      - name: CLI
 
   - name: Desenvolvimento Web
-    quote: >
-      Me viro bem com HTML5, CSS3 e JavaScript. Sou fissurado em otimização de assets.
     items:
-      - name: HTML5
-      - name: CSS3/Sass
-      - name: JavaScript (ES6)
+      - name: React
+      - name: Redux
+      - name: JavaScript/ES6
+      - name: Sass
       - name: Otimização de assets
       - name: Noções de acessibilidade
 
   - name: Comunicação
     items:
-      - name: Procuro entender os requisitos do projeto para evitar retrabalho e perca de eficiência;
-      - name: Consigo manter a calma em momentos de estresse e resolver problemas com a equipe;
-      - name: Consigo reconhecer meus erros e gosto de saber onde posso melhorar. Sem clichés.
+      - name: Não guardo dúvidas sobre os requisitos do projeto;
+      - name: Consigo manter a calma em situações estressantes;
+      - name: Consigo aceitar quando erro. Gosto de saber como posso ser um profissional melhor.
 
   - name: Interesses
     quote: >
@@ -70,12 +61,10 @@ skills:
       - name: APIs RESTful
       - name: Machine Learning
       - name: Sistemas Embarcados
-      - name: Projetos Open Source
-
 
   - name: Idiomas
     quote: >
-      Consigo ler e ouvir em inglês sem dificuldades, mas a conversação e escrita podem melhorar.
+      Consigo ouvir e ler em inglês sem dificuldades, mas a conversação e escrita podem melhorar.
     items:
       - name: Português - Nativo
       - name: Inglês - Avançado
@@ -84,9 +73,10 @@ skills:
 courses:
   - name: MIT 6.00.1x - Introduction to Computer Science and Programming Using Python
     url: https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11
+    certificateUrl: https://courses.edx.org/certificates/08b8d2e3cc5a4054b8db189e6645b69a
     institution: MIT
     from: 2018
-    to: Presente
+    to: 2018
     description: >
       Curso de introdução à ciência da computação do MIT, utilizando Python. Assuntos como abstrações, algorítmos básicos, estruturas de dados e engenharia de software são abordados.
 
@@ -97,19 +87,18 @@ experiences:
     from: Julho, 2017
     to: Presente
     activities:
-      - Criação e manutenção de Guia de Estilos interno para consistência de código;
-      - Criação e manutenção de Boilerplate e Pattern Library interna para agilizar prototipação e tornar o desenvolvimento mais consistente;
+      - Desenvolvimento Front End;
+      - Desenvovlimento e manutenção de Boilerplate e Pattern Library interna;
       - Análise e otimização do fluxo de desenvolvimento.
 
 
-  - role: Diretor/Desenvolvedor Web
+  - role: Desenvolvedor Web
     company: Hammer Gaming
     from: 2015
     to: 2016
     activities:
-      - Planejamento estratégico;
-      - Otimização de performance e tempo de carregamento;
-      - Configuração de servidor web.
+      - Otimização de performance;
+      - Configuração e otimização de servidor web (nginx).
 
 ---
 
@@ -203,6 +192,11 @@ experiences:
             <p class="meta-info__description">
               {{ course.description }}
             </p>
+            {% if course.certificateUrl %}
+              <a href="{{ course.certificateUrl }}" class="meta-info__description">
+                Ver certificado
+              </a>
+            {% endif %}
           </li>
 
           {% endfor %}
@@ -212,7 +206,7 @@ experiences:
       <!-- resume-section -->
 
       <section class="resume-section">
-        <small>Última atualização: 06/08/2018</small>
+        <small>Última atualização: 18/02/2019</small>
       </section>
 
     </div>
