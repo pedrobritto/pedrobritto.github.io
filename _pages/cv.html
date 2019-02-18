@@ -13,7 +13,6 @@ about_me: >
     Tenho interesse por Machine Learning, APIs RESTful (Node.js em especial) e Sistemas Embarcados.
   </p>
 
-
 skills:
   - name: Desenvolvimento em geral
     items:
@@ -23,20 +22,9 @@ skills:
       - name: Noções de Clean Code
 
   - name: Linguagens
-    quote: >
-      Consigo escrever em:
     items:
       - name: JavaScript/ES6 - Intermediário
       - name: Python - Básico
-
-  - name: Ferramentas de Desenvolvimento
-    quote: >
-    Normalmente uso ou experimento com essas ferramentas no dia a dia:
-    items:
-      - name: Git
-      - name: Gulp
-      - name: Node.js
-      - name: CLI
 
   - name: Desenvolvimento Web
     items:
@@ -44,8 +32,9 @@ skills:
       - name: Redux
       - name: JavaScript/ES6
       - name: Sass
+      - name: Node
+      - name: Git
       - name: Otimização de assets
-      - name: Noções de acessibilidade
 
   - name: Comunicação
     items:
@@ -55,7 +44,7 @@ skills:
 
   - name: Interesses
     quote: >
-      Penso em aprender/fazer isso num futuro próximo:
+      Penso em aprender ou fazer isso num futuro próximo:
     items:
       - name: Alemão
       - name: APIs RESTful
@@ -189,14 +178,16 @@ experiences:
               <div class="meta-info__subtitle">{{ course.institution }}</div>
               <div class="meta-info__date">{{ course.from }} &ndash; {{ course.to}}</div>
             </div>
-            <p class="meta-info__description">
-              {{ course.description }}
-            </p>
+
             {% if course.certificateUrl %}
               <a href="{{ course.certificateUrl }}" class="meta-info__description">
                 Ver certificado
               </a>
             {% endif %}
+
+            <p class="meta-info__description">
+              {{ course.description }}
+            </p>
           </li>
 
           {% endfor %}
